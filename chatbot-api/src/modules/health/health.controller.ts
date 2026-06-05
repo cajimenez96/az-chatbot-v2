@@ -3,16 +3,16 @@ import {
   HealthCheck,
   HealthCheckService,
   TypeOrmHealthIndicator,
-  MemoryHealthIndicator,
 } from '@nestjs/terminus';
 import { Public } from '../../shared/decorators/public.decorator';
+import { RedisHealthIndicator } from '../../shared/redis/redis-health.indicator';
 
 @Controller('api/v1/health')
 export class HealthController {
   constructor(
     private readonly health: HealthCheckService,
     private readonly db: TypeOrmHealthIndicator,
-    private readonly memory: MemoryHealthIndicator,
+    private readonly redis: RedisHealthIndicator,
   ) {}
 
   @Get()
@@ -21,7 +21,7 @@ export class HealthController {
   check() {
     return this.health.check([
       () => this.db.pingCheck('database'),
-      () => this.memory.checkHeap('memory_heap', 300 * 1024 * 1024),
+      () => this.redis.pingCheck('redis'),
     ]);
   }
 }

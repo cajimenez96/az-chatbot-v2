@@ -56,3 +56,10 @@ docker/volumes/
 # AI assistant instruction files
 AGENTS.md
 CLAUDE.md
+
+# AI prompt collections inside .github
+.github/prompts/
+
+# Python cache
+__pycache__/
+*.pyc

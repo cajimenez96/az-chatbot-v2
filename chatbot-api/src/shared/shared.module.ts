@@ -6,6 +6,8 @@ import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { RolesGuard } from './guards/roles.guard';
 import { GlobalExceptionFilter } from './filters/global-exception.filter';
 import { TenantContextInterceptor } from './interceptors/tenant-context.interceptor';
+import { RedisProvider } from './redis/redis.provider';
+import { RedisHealthIndicator } from './redis/redis-health.indicator';
 
 @Global()
 @Module({
@@ -18,6 +20,9 @@ import { TenantContextInterceptor } from './interceptors/tenant-context.intercep
       useFactory: (dataSource: DataSource) => new TenantContextInterceptor(dataSource),
       inject: [getDataSourceToken()],
     },
+    RedisProvider,
+    RedisHealthIndicator,
   ],
+  exports: [RedisProvider, RedisHealthIndicator],
 })
 export class SharedModule {}
