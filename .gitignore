@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+*.tsbuildinfo
+*.js.map
+
+# Testing
+coverage/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# TypeORM
+ormconfig.json
+
+# Docker volumes (local dev)
+docker/volumes/
+
+# AI assistant tool folders
+.agent/
+.atl/
+.claude/
+.codebuddy/
+.codex/
+.continue/
+.cursor/
+.gemini/
+.kiro/
+.opencode/
+.qoder/
+.qodo/
+.roo/
+.trae/
+.windsurf/
+
+# AI assistant instruction files
+AGENTS.md
+CLAUDE.md
