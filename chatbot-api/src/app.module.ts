@@ -9,6 +9,7 @@ import { validateEnv } from './config/env.schema';
 import { buildDataSourceOptions } from './shared/database/datasource';
 import { SharedModule } from './shared/shared.module';
 import { HealthController } from './modules/health/health.controller';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { HealthController } from './modules/health/health.controller';
     TerminusModule,
 
     SharedModule,
+    AuthModule,
   ],
   controllers: [HealthController],
 })

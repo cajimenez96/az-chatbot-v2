@@ -1,0 +1,21 @@
+'use client';
+
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
+
+interface AuthState {
+  accessToken: string | null;
+  setAccessToken: (token: string) => void;
+  clearAuth: () => void;
+}
+
+export const useAuthStore = create<AuthState>()(
+  persist(
+    (set) => ({
+      accessToken: null,
+      setAccessToken: (token) => set({ accessToken: token }),
+      clearAuth: () => set({ accessToken: null }),
+    }),
+    { name: 'converxa-auth' },
+  ),
+);
