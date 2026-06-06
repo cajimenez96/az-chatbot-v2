@@ -2,8 +2,9 @@ import * as path from 'path';
 import { config } from 'dotenv';
 import { DataSource, DataSourceOptions } from 'typeorm';
 
-// Load .env when executed directly by TypeORM CLI (no NestJS bootstrapping)
-config({ path: path.join(__dirname, '../../../.env') });
+// Load .env when executed directly by TypeORM CLI (no NestJS bootstrapping).
+// process.cwd() is always chatbot-api/, regardless of compiled __dirname depth.
+config({ path: path.join(process.cwd(), '.env') });
 
 export function buildDataSourceOptions(): DataSourceOptions {
   const url = process.env.DATABASE_URL;

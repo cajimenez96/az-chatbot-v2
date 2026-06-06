@@ -1,0 +1,65 @@
+{
+  "common": {
+    "appName": "Converxa",
+    "appTagline": "Plataforma de chatbot para WhatsApp",
+    "footer": "Construido con cuidado para tus clientes.",
+    "loading": "Cargando…"
+  },
+  "auth": {
+    "layout": {
+      "footer": "© {year} Converxa. Construido con cuidado para tus clientes."
+    },
+    "login": {
+      "title": "Bienvenido de vuelta",
+      "subtitle": "Iniciá sesión en tu workspace",
+      "email": "Email",
+      "emailPlaceholder": "vos@empresa.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Iniciar sesión",
+      "submitting": "Iniciando sesión…",
+      "noAccount": "¿No tenés cuenta?",
+      "createOne": "Creá una",
+      "error": "Email o contraseña incorrectos.",
+      "validation": {
+        "emailInvalid": "Ingresá un email válido",
+        "passwordRequired": "La contraseña es requerida"
+      }
+    },
+    "register": {
+      "title": "Comenzá tu prueba gratuita",
+      "subtitle": "14 días gratis, sin tarjeta de crédito",
+      "firstName": "Nombre",
+      "firstNamePlaceholder": "Ana",
+      "lastName": "Apellido",
+      "lastNamePlaceholder": "García",
+      "workEmail": "Email de trabajo",
+      "workEmailPlaceholder": "vos@empresa.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Al menos 8 caracteres",
+      "workspaceSection": "Tu workspace",
+      "companyName": "Nombre de la empresa",
+      "companyNamePlaceholder": "Acme Corp",
+      "workspaceUrl": "URL del workspace",
+      "workspaceUrlPrefix": "converxa.app/",
+      "workspaceUrlPlaceholder": "acme-corp",
+      "submit": "Comenzar prueba gratuita",
+      "submitting": "Creando cuenta…",
+      "hasAccount": "¿Ya tenés cuenta?",
+      "signIn": "Iniciá sesión",
+      "error": "El registro falló. Intentá de nuevo.",
+      "validation": {
+        "emailInvalid": "Ingresá un email válido",
+        "passwordMin": "Al menos 8 caracteres",
+        "firstNameRequired": "Requerido",
+        "lastNameRequired": "Requerido",
+        "companyMin": "Al menos 2 caracteres",
+        "slugMin": "Al menos 2 caracteres",
+        "slugPattern": "Solo letras minúsculas, números y guiones"
+      }
+    }
+  },
+  "dashboard": {
+    "comingSoon": "Dashboard — próximamente en T-03"
+  }
+}

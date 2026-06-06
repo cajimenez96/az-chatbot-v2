@@ -1,4 +1,9 @@
+import { useTranslations } from 'next-intl';
+
 export default function AuthLayout({ children }: { children: React.ReactNode }) {
+  const t = useTranslations('auth.layout');
+  const year = new Date().getFullYear();
+
   return (
     <main className="min-h-screen bg-[#fefae0] flex items-center justify-center p-4">
       <div className="w-full max-w-md">
@@ -13,7 +18,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           {children}
         </div>
         <p className="text-center text-xs text-[#9aab93] mt-6">
-          &copy; {new Date().getFullYear()} Converxa. Built with care for your customers.
+          {t('footer', { year })}
         </p>
       </div>
     </main>

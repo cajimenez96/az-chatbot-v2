@@ -1,0 +1,65 @@
+{
+  "common": {
+    "appName": "Converxa",
+    "appTagline": "WhatsApp chatbot platform",
+    "footer": "Built with care for your customers.",
+    "loading": "Loading…"
+  },
+  "auth": {
+    "layout": {
+      "footer": "© {year} Converxa. Built with care for your customers."
+    },
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your workspace",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "password": "Password",
+      "passwordPlaceholder": "••••••••",
+      "submit": "Sign in",
+      "submitting": "Signing in…",
+      "noAccount": "Don't have an account?",
+      "createOne": "Create one",
+      "error": "Invalid email or password.",
+      "validation": {
+        "emailInvalid": "Enter a valid email",
+        "passwordRequired": "Password is required"
+      }
+    },
+    "register": {
+      "title": "Start your free trial",
+      "subtitle": "14 days free, no credit card required",
+      "firstName": "First name",
+      "firstNamePlaceholder": "Ana",
+      "lastName": "Last name",
+      "lastNamePlaceholder": "García",
+      "workEmail": "Work email",
+      "workEmailPlaceholder": "you@company.com",
+      "password": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "workspaceSection": "Your workspace",
+      "companyName": "Company name",
+      "companyNamePlaceholder": "Acme Corp",
+      "workspaceUrl": "Workspace URL",
+      "workspaceUrlPrefix": "converxa.app/",
+      "workspaceUrlPlaceholder": "acme-corp",
+      "submit": "Start free trial",
+      "submitting": "Creating account…",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "error": "Registration failed. Try again.",
+      "validation": {
+        "emailInvalid": "Enter a valid email",
+        "passwordMin": "At least 8 characters",
+        "firstNameRequired": "Required",
+        "lastNameRequired": "Required",
+        "companyMin": "At least 2 characters",
+        "slugMin": "At least 2 characters",
+        "slugPattern": "Only lowercase letters, numbers and hyphens"
+      }
+    }
+  },
+  "dashboard": {
+    "comingSoon": "Dashboard — coming soon in T-03"
+  }
+}
