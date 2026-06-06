@@ -8,10 +8,10 @@ export class TenantSettings {
   @Column({ name: 'tenant_id', type: 'uuid' })
   tenantId: string;
 
-  @Column({ default: 'America/Argentina/Buenos_Aires' })
+  @Column({ type: 'varchar', default: 'America/Argentina/Buenos_Aires' })
   timezone: string;
 
-  @Column({ name: 'handoff_timeout_minutes', default: 30 })
+  @Column({ name: 'handoff_timeout_minutes', type: 'int', default: 30 })
   handoffTimeoutMinutes: number;
 
   @Column({ name: 'main_menu_message', type: 'text', nullable: true })

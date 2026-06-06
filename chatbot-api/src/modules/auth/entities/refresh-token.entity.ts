@@ -8,7 +8,7 @@ export class RefreshToken {
   @Column({ name: 'user_id', type: 'uuid' })
   userId: string;
 
-  @Column({ name: 'token_hash' })
+  @Column({ name: 'token_hash', type: 'varchar' })
   tokenHash: string;
 
   @Column({ name: 'expires_at', type: 'timestamptz' })

@@ -9,22 +9,22 @@ export class User {
   @Column({ name: 'tenant_id', type: 'uuid', nullable: true })
   tenantId: string | null;
 
-  @Column({ unique: true })
+  @Column({ type: 'varchar', unique: true })
   email: string;
 
-  @Column({ name: 'password_hash' })
+  @Column({ name: 'password_hash', type: 'varchar' })
   passwordHash: string;
 
   @Column({ name: 'role', type: 'varchar', default: Role.TENANT_OWNER })
   role: Role;
 
-  @Column({ name: 'first_name', nullable: true })
+  @Column({ name: 'first_name', type: 'varchar', nullable: true })
   firstName: string | null;
 
-  @Column({ name: 'last_name', nullable: true })
+  @Column({ name: 'last_name', type: 'varchar', nullable: true })
   lastName: string | null;
 
-  @Column({ name: 'is_active', default: true })
+  @Column({ name: 'is_active', type: 'boolean', default: true })
   isActive: boolean;
 
   @CreateDateColumn({ name: 'created_at' })

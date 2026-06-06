@@ -6,10 +6,10 @@ export class Tenant {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column()
+  @Column({ type: 'varchar' })
   name: string;
 
-  @Column({ unique: true })
+  @Column({ type: 'varchar', unique: true })
   slug: string;
 
   @Column({ name: 'owner_user_id', type: 'uuid', nullable: true })
